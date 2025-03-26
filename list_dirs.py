@@ -49,7 +49,7 @@ def get_directory_contents(url, retries=3):
                             # It's a file, print its name
                             print(f"  File: {href}")
 
-                return  # Exit the function on success
+                return 
 
         except requests.exceptions.RequestException as e:
             print(f"Attempt {attempt + 1} failed for {url}: {e}")
@@ -65,8 +65,9 @@ if __name__ == "__main__":
 
     # Define the directories to process
     directories = {
-        "n2o": "n2o/flask/surface/",
-        "sf6": "sf6/flask/surface/",
+        "N/A": "--/--/--/",
+        "N/A": "--/--/--/",
+        "N/A": "--/--/--/",
     }
 
     for dir_name, dir_path in directories.items():
